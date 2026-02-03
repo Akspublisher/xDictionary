@@ -22,6 +22,7 @@ const handleSearch = (e) => {
     if(inputWord === "") {
         alert("Please enter a word to search");
         return;
+
     }
     const foundWord = dictionary.find(word => word.word.toLowerCase() === inputWord.toLowerCase());
  //   alert("Found word: " + JSON.stringify(foundWord));
