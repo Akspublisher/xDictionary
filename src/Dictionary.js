@@ -36,7 +36,7 @@ const handleSearch = (e) => {
     return (
         <div>
             <h1 style={{marginBottom:"10px"}}>Dictionary App</h1>
-            <input type ="search" placeholder ="search for a word"  onChange={(e) => setInputWord(e.target.value)} />
+            <input type ="text" placeholder ="search for a word"  onChange={(e) => setInputWord(e.target.value)} />
             <button onClick={handleSearch}>Search</button>
             <h3>Definition:</h3>
             <p>{definition}</p>
