@@ -19,11 +19,10 @@ export default function Dictionary() {
 const handleSearch = (e) => {
     //alert("Search button ok");     
     e.preventDefault();
-    if(inputWord === "") {
-        alert("Please enter a word to search");
-        return;
-
-    }
+    if (inputWord.trim() === "") {
+            setDefinition("Word not found in the dictionary.");
+            return;
+        }
     const foundWord = dictionary.find(word => word.word.toLowerCase() === inputWord.toLowerCase());
  //   alert("Found word: " + JSON.stringify(foundWord));
     if (foundWord) {
